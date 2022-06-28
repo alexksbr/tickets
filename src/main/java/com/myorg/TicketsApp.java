@@ -9,6 +9,8 @@ public class TicketsApp {
 
         new TicketsStack(app, "TicketsStack", StackProps.builder().build());
 
+        ConcertsStack.Builder.create(app, "ConcertsStack").build();
+
         app.synth();
     }
 }
