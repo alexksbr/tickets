@@ -1,4 +1,4 @@
-package com.myorg;
+package com.myorg.infrastructure;
 
 import software.amazon.awscdk.App;
 
