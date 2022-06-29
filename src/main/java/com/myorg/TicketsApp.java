@@ -6,7 +6,7 @@ public class TicketsApp {
     public static void main(final String[] args) {
         App app = new App();
 
-        ConcertsStack.Builder.create(app, "ConcertsStack").build();
+        new ConcertsStack(app, "ConcertsStack");
 
         app.synth();
     }
