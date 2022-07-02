@@ -40,8 +40,7 @@ public class ConcertsStack extends Stack {
                         .portMappings(List.of(PortMapping.builder().containerPort(8080).build()))
                         .build());
 
-        final ApplicationLoadBalancedEc2Service concertsService =
-                ApplicationLoadBalancedEc2Service.Builder.create(this, "ConcertsService")
+        ApplicationLoadBalancedEc2Service.Builder.create(this, "ConcertsService")
                         .cluster(cluster)
                         .taskDefinition(concertsServiceTaskDefinition)
                         .build();
