@@ -45,28 +45,5 @@ public class ConcertsStack extends Stack {
                         .cluster(cluster)
                         .taskDefinition(concertsServiceTaskDefinition)
                         .build();
-
-        //        final Ec2Service ec2Service =
-        //                Ec2Service.Builder.create(this, "ConcertsService")
-        //                        .cluster(cluster)
-        //                        .taskDefinition(concertsServiceTaskDefinition)
-        //                        .desiredCount(1)
-        //                        .build();
-        //
-        //        final ApplicationLoadBalancer loadBalancer =
-        //                ApplicationLoadBalancer.Builder.create(this,
-        // "ConcertsServiceLoadBalancer")
-        //                        .vpc(cluster.getVpc())
-        //                        .internetFacing(true)
-        //                        .build();
-        //
-        //        final ApplicationListener applicationListener =
-        //                loadBalancer.addListener(
-        //                        "PublicListener",
-        // BaseApplicationListenerProps.builder().port(80).build());
-        //        applicationListener.addTargets(
-        //                "ECS",
-        //
-        // AddApplicationTargetsProps.builder().port(80).targets(List.of(ec2Service)).build());
     }
 }
