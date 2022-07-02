@@ -1,4 +1,4 @@
-package com.myorg.infrastructure;
+package com.myorg.infrastructure.concertsstack;
 
 import java.util.List;
 import software.amazon.awscdk.Stack;

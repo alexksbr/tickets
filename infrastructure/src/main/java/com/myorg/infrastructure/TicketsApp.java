@@ -1,5 +1,6 @@
 package com.myorg.infrastructure;
 
+import com.myorg.infrastructure.concertsstack.ConcertsStack;
 import software.amazon.awscdk.App;
 
 public class TicketsApp {
